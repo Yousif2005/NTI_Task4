@@ -25,7 +25,7 @@ html, body {
 /* Header / Hero section (Home page) */
 .hero-header {
   height: 100vh;
-  background: url('../ecommerce_project/header-bg.jpg') no-repeat; 
+  background: url('header-bg.jpg') no-repeat; 
   background-size: cover;
   background-position: center;
   position: relative;
