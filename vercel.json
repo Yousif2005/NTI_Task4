@@ -1,16 +1,16 @@
 {
   "builds": [
     {
-      "src": "index.php",
+      "src": "**/*.php",
       "use": "vercel-php@0.7.1"
     },
     {
-      "src": "style.css",
+      "src": "public/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
-    { "src": "/style.css", "dest": "/style.css" },
-    { "src": "/(.*)", "dest": "/index.php" }
+    { "src": "/public/(.*)", "dest": "/public/$1" },
+    { "src": "/(.*)", "dest": "/$1.php" }
   ]
 }
