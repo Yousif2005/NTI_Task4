@@ -1,0 +1,111 @@
+/* General*/
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f7f8fa;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Header / Hero section (Home page) */
+.hero-header {
+  height: 100vh;
+  background: url('../ecommerce_project/header-bg.jpg') no-repeat; 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%; 
+}
+
+.hero-header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-header .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero-header p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+
+/* Product Cards */
+.product-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-price {
+    color: #28a745;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Account / Forms */
+.account-wrapper {
+    max-width: 500px;
+    margin: 60px auto;
+}
+
+.account-card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.account-card .card-header {
+    background-color: #343a40;
+    color: #fff;
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+    text-align: center;
+    padding: 18px;
+}
+
+.is-invalid-msg {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 4px;
+}
+
+footer {
+    margin-top: 40px;
+}
